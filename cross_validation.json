@@ -1,0 +1,51 @@
+{
+ "name": "QAG Cross-Framework Validation",
+ "version": "2026-10-20",
+ "provider": "R&R Droids",
+ "note": "Measured results of the QAG cross-framework validation series (Reports 1-8). Candidate constants are labeled; nothing here supersedes the Master Technical Dossier.",
+ "sparc_cross_runs": {
+  "protocol": "SPARC 175 galaxies, 3391 points, velocity chi2 (QAG v3.0 protocol) unless noted",
+  "qag_fitted_red_chi2": 5.549,
+  "mond_red_chi2": 56.554,
+  "newton_red_chi2": 616.742,
+  "esf_eq8_under_qag_protocol_red_chi2": 123.08156045784193,
+  "esf_home_dex_rmse_replicated": 0.22748376948058402,
+  "qag_in_esf_protocol_dex_rmse": 0.15382347063963192
+ },
+ "universal_scales": {
+  "dossier_as_published_U0_red_chi2": 81.0286230643896,
+  "best_recalibrated_U3_red_chi2": 57.8294,
+  "best_recalibrated_U4_red_chi2": 57.7594,
+  "U3_out_of_sample_red_chi2": 58.7,
+  "candidate_constants_status": "CANDIDATES ONLY - not Dossier canon (Report 6)",
+  "engine_v2": "code/qag_predictive_engine_v2.py in Sir-Ripley/QAGKinetics"
+ },
+ "clusters_esf": {
+  "xcop_gamma_replicated": 0.69,
+  "xcop_loco_rmse": 0.0721,
+  "xcop_bootstrap_ci": [
+   0.6,
+   0.79
+  ],
+  "erosita_frozen_gamma_rmse": 0.4406,
+  "erosita_published_rmse": 0.435
+ },
+ "qag_cluster_law": {
+  "registry_beta_status": "INERT at published value under both readings (Report 7)",
+  "integral_form_beta_rho_xcop": 0.0283,
+  "integral_form_beta_rho_erosita": 0.2249,
+  "integral_form_beta_rho_bullet_apertures": 0.005,
+  "pointwise_beta_g_s2_per_m": 794000000000.0,
+  "pointwise_xcop_rmse": 0.1659,
+  "pointwise_erosita_rmse": 0.2061,
+  "bullet_morphology": {
+   "observed_kappa_sub_to_light_kpc": 43,
+   "observed_kappa_peak_ratio": 0.852,
+   "model_bullet_peak_dist_to_light_kpc_sigma100": "20-80 (beta_rho 0.0028-0.225)",
+   "model_peak_ratio_sigma100": 0.83,
+   "baryons_only_subcluster_peak": "none at sigma >= 100 kpc",
+   "verdict": "morphology CONFIRMED; beta_rho universality REFUTED (0.005/0.028/0.225)"
+  }
+ },
+ "reports": "Drive folder 'Gemini Gems' (Reports 1-8 + beta reconciliation memo); repo Sir-Ripley/QAGKinetics docs/validation ADDENDUM v4-v7"
+}
