@@ -1,6 +1,7 @@
 {
  "headers": [
   {
+   "source": "/galaxies175.json",
    "headers": [
     {
      "key": "Access-Control-Allow-Origin",
@@ -14,10 +15,62 @@
      "key": "X-Content-Type-Options",
      "value": "nosniff"
     }
-   ],
-   "source": "/galaxies175.json"
+   ]
   },
   {
+   "source": "/cross_validation.json",
+   "headers": [
+    {
+     "key": "Access-Control-Allow-Origin",
+     "value": "*"
+    },
+    {
+     "key": "Cache-Control",
+     "value": "public, max-age=3600"
+    }
+   ]
+  },
+  {
+   "source": "/sparc175-corrected.csv",
+   "headers": [
+    {
+     "key": "Access-Control-Allow-Origin",
+     "value": "*"
+    },
+    {
+     "key": "Cache-Control",
+     "value": "public, max-age=3600"
+    }
+   ]
+  },
+  {
+   "source": "/galaxies175.full.json",
+   "headers": [
+    {
+     "key": "Access-Control-Allow-Origin",
+     "value": "*"
+    },
+    {
+     "key": "Cache-Control",
+     "value": "public, max-age=3600"
+    }
+   ]
+  },
+  {
+   "source": "/ingest_manifest.json",
+   "headers": [
+    {
+     "key": "Access-Control-Allow-Origin",
+     "value": "*"
+    },
+    {
+     "key": "Cache-Control",
+     "value": "public, max-age=3600"
+    }
+   ]
+  },
+  {
+   "source": "/(.*)",
    "headers": [
     {
      "key": "X-Content-Type-Options",
@@ -31,21 +84,7 @@
      "key": "Referrer-Policy",
      "value": "strict-origin-when-cross-origin"
     }
-   ],
-   "source": "/(.*)"
-  },
-  {
-   "headers": [
-    {
-     "key": "Access-Control-Allow-Origin",
-     "value": "*"
-    },
-    {
-     "key": "Cache-Control",
-     "value": "public, max-age=3600"
-    }
-   ],
-   "source": "/cross_validation.json"
+   ]
   }
  ]
 }
